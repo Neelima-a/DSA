@@ -4,7 +4,4 @@ function sumNaturalNos(n){
     console.log(`sum of ${n} numbers is ${sum}`);
 }
 
-
-
-
 sumNaturalNos(10)
