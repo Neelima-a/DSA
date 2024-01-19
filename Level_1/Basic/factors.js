@@ -1,15 +1,25 @@
-function factors(n){
-    let count = 0
-    for(var i = 1; i * i <= n; i++){
-        if(i*i === n){
-            count = count + 1;
-        }else if (n % i === 0){
-            count = count +2;
+// given N, count no of factors of N
+function factorsCount(N){
+    let FCount = 0;
+    for (let i = 0; i * i <= N; i++) {
+        if(N % i == 0){
+            if(i * i == N) FCount += 1;
+            else FCount += 2
         }
-    } 
-    console.log('factor count', count);
+    }
+    return FCount;
 }
 
-console.log(factors(25));
 
-//done
+
+function countFactors(N){
+    let count = 0;
+    for (let i = 0; i <= N; i++) {
+        if(i % N == 0){
+            count = count + 1;
+        }
+    }
+    return count;
+}
+// console.log(countFactors(25));
+console.log(factorsCount(25));
