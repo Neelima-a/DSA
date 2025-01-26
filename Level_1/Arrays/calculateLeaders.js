@@ -17,8 +17,3 @@ const noOfLeaders = (arr, n) => {
 
 let arr = [3, 5, 86, 6, 5, 34, 56, 7, 64, 43, 24];
 noOfLeaders(arr, arr.length);
-
-// let j = i + 1;
-// if(arr[i] < arr[j] && j < n){
-//     j++;
-// }
